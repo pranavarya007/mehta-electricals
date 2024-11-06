@@ -1,11 +1,19 @@
 import React from "react";
 import Section from "./Section";
-import image15 from "../images/mehtaElectrical/15.jpg";
+//import image15 from "../images/mehtaElectrical/15.jpg";
 import List, { ListItem } from "./List";
 
 const Deliver = () => {
   return (
-    <Section title="Deliver" image={{ src: image15, shape: 1 }}>
+    <Section
+      title="Deliver"
+      image={{
+        src: "/images/mehtaElectrical/15.jpg",
+        shape: 1,
+        width: 600, // specify width
+        height: 400, // specify height
+      }}
+    >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           The final phase of our solar services focuses on delivery, where we

@@ -1,11 +1,19 @@
 import React from "react";
 import Section from "./Section";
-import image28 from "../images/mehtaElectrical/28.jpg";
+//import image28 from "../images/mehtaElectrical/28.jpg";
 import Blockquote from "./Blockquote";
 
 const Build = () => {
   return (
-    <Section title="Execution" image={{ src: image28, shape: 2 }}>
+    <Section
+      title="Execution"
+      image={{ 
+        src: "/images/mehtaElectrical/28.jpg", 
+        shape: 2, 
+         width: 600,  // specify width
+         height: 400, // specify height
+      }}
+    >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Once the planning phase is complete, we transition into execution,

@@ -29,6 +29,8 @@ const Testimonials = ({ children, client, className }) => {
               <Image
                 src={client.logo}
                 alt={client.name}
+                width={200} // Image width
+                height={100} // Image height
                 className={client.logoClass}
                 unoptimized
               />

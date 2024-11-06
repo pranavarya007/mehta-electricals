@@ -3,7 +3,7 @@ import SectionIntro from "./SectionIntro";
 import Container from "./Container";
 import FadeIn from "./FadeIn";
 import StylizedImage from "./StylizedImage";
-import image35 from "../images/mehtaElectrical/35.jpg";
+//import image35 from "../images/mehtaElectrical/35.jpg";
 import List, { ListItem } from "./List";
 
 const Services = () => {
@@ -24,9 +24,11 @@ const Services = () => {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12 lg:pb-11">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={image35}
+                src={"/images/mehtaElectrical/35.jpg"}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
+                width={200} // Image width
+                height={100} // Image height
               />
             </FadeIn>
           </div>

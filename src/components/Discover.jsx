@@ -1,11 +1,19 @@
 import React from "react";
 import Section from "./Section";
-import image29 from "../images/mehtaElectrical/29.jpg"
+//import image29 from "../images/mehtaElectrical/29.jpg"
 import { TagList, TagListItem } from "./TagList";
 
 const Discover = () => {
   return (
-    <Section title="Planning" image={{ src: image29, shape: 1 }}>
+    <Section
+      title="Planning"
+      image={{
+        src: "/images/mehtaElectrical/29.jpg",
+        shape: 1,
+        width: 600, // specify width
+        height: 400, // specify height
+      }}
+    >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           The foundation of any successful solar project lies in thorough

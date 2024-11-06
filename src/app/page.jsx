@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import logoLiciousDark from "@/images/logos/licious-logo-dark.svg";
+//import logoLiciousDark from "@/public/images/logos/licious-logo-dark.svg";
 
 export default function Home() {
   return (
@@ -33,7 +33,8 @@ export default function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{
           name: "Licious",
-          logo: logoLiciousDark,
+          logo: "/images/logos/licious-logo-dark.svg",
+          
           logoClass: "h-14 w-auto",
         }}
       >
