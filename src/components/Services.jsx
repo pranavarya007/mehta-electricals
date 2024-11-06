@@ -15,8 +15,8 @@ const Services = () => {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As an "A" class Electrical Contractor, we specialize in a variety of
-          services. Some of our most demanding services are
+          As an &quot;A&quot; class Electrical Contractor, we specialize in a
+          variety of services. Some of our most demanding services are
         </p>
       </SectionIntro>
       <Container className="mt-16">

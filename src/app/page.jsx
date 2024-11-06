@@ -19,12 +19,12 @@ export default function Home() {
             <strong className="font-semibold text-neutral-950">
               Mehta Electrical & Communication
             </strong>{" "}
-            is an ISO 9001-2008 Certified "A" class Electrical Contractor,
-            operating under License No. H-587/22, granted by the Haryana
-            Government unser rule 45 of the Indian Electricity Rules, 1956. With
-            a history dating back to 2006, we have become a trusted name in the
-            industry, providing comprehensive electrical solutions to a diverse
-            clientele.
+            is an ISO 9001-2008 Certified &quot;A&quot; class Electrical
+            Contractor, operating under License No. H-587/22, granted by the
+            Haryana Government unser rule 45 of the Indian Electricity Rules,
+            1956. With a history dating back to 2006, we have become a trusted
+            name in the industry, providing comprehensive electrical solutions
+            to a diverse clientele.
           </p>
         </FadeIn>
       </Container>
@@ -34,12 +34,12 @@ export default function Home() {
         client={{
           name: "Licious",
           logo: "/images/logos/licious-logo-dark.svg",
-          
+
           logoClass: "h-14 w-auto",
         }}
       >
         Working with Mehta Electricals has been an absolute game-changer for our
-        operations. Their team’s dedication to precision, reliability, and
+        operations. Their team&apos;s dedication to precision, reliability, and
         on-time delivery has set a new standard for our expectations from
         contractors. From initial consultation to the final installation, their
         expertise in handling high-demand projects shone through every step.
