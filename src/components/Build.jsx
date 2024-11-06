@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "./Section";
-import image28 from "@/images/mehtaElectrical/28.jpg";
+import image28 from "../images/mehtaElectrical/28.jpg";
 import Blockquote from "./Blockquote";
 
 const Build = () => {
@@ -36,8 +36,8 @@ const Build = () => {
         author={{ name: "Manish Chaudhary", role: "CEO of Jindal Steel" }}
         className="mt-12"
       >
-        Mehta Electrical & Communication were so regular with their progress updates we almost began
-        to think they were automated!
+        Mehta Electrical & Communication were so regular with their progress
+        updates we almost began to think they were automated!
       </Blockquote>
     </Section>
   );
