@@ -3,7 +3,7 @@ import SectionIntro from "./SectionIntro";
 import Container from "./Container";
 import FadeIn from "./FadeIn";
 import StylizedImage from "./StylizedImage";
-import image35 from "../images/mehtaElectrical/35.jpg"
+import image35 from "../images/mehtaElectrical/35.jpg";
 import List, { ListItem } from "./List";
 
 const Services = () => {
@@ -58,7 +58,9 @@ const Services = () => {
               electrical performance, providing reliable power management for
               various applications.
             </ListItem>
-            <ListItem title="Oil Filteration">
+            {/*
+              
+               <ListItem title="Oil Filteration">
               Specialized transformer oil filtration and dehydration services to
               enhance the lifespan and efficiency of your transformers. Our
               advanced techniques remove impurities and moisture from
@@ -71,6 +73,9 @@ const Services = () => {
               ensure reliable and efficient meter setups, enabling you to track
               usage and manage energy costs effectively.
             </ListItem>
+            
+              */}
+
             <ListItem title="Supply, Installation, Testing, and Commissioning">
               Comprehensive services covering the supply, installation, testing,
               and commissioning of electrical systems and equipment. Our
