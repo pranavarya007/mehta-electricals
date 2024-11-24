@@ -12,6 +12,7 @@ module.exports = {
         "4xl": "2.5rem",
       },
       fontFamily: {
+        calluna: ["Calluna", "serif"],
         sans: ["Mona Sans", ...defaultTheme.fontFamily.sans],
         display: [
           ["Mona Sans", ...defaultTheme.fontFamily.sans],

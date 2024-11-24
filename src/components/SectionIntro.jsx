@@ -30,7 +30,7 @@ const SectionIntro = ({
           )}
           <span
             className={clsx(
-              "block font-display tracking-tight [text-wrap:balance]",
+              "block font-calluna font-display tracking-tight [text-wrap:balance]",
               smaller
                 ? "text-2xl font-semibold"
                 : "text-4xl font-medium sm:text-5xl",

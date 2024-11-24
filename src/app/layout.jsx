@@ -1,5 +1,7 @@
 import RootLayout from "@/components/RootLayout";
 import "./globals.css";
+import "./font.css";
+
 
 export const metadata = {
   title: {

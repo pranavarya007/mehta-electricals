@@ -12,6 +12,7 @@ import clsx from "clsx";
 import Offices from "./Offices";
 import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
+import { HiSearch } from "react-icons/hi";
 
 const Header = ({
   panelId,
@@ -27,12 +28,30 @@ const Header = ({
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
-          <Logo invert={invert}>Mehta Electrical & Communication</Logo>
+          <Logo className="text-white hover:scale-105 hover:text-white">
+            Mehta Electrical & Communication
+          </Logo>
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href={"/contact"} invert={invert}>
-            Contact us
+          {/* Contact Us Button */}
+          <Button
+            className="bg-white text-black"
+            href={"/contact"}
+            // invert={invert}
+          >
+            <p className="text-black">Contact us</p>
           </Button>
+
+          {/* Search Button */}
+          <button
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-black hover:bg-white/10"
+            aria-label="Search"
+          >
+            <HiSearch className="h-5 w-5" /> {/* Search icon */}
+          </button>
+
+
+          {/* Navigation Toggle Button */}
           <button
             ref={toggleRef}
             type="button"
@@ -41,7 +60,7 @@ const Header = ({
             aria-controls={panelId}
             className={clsx(
               "group -m-2.5 rounded-full p-2.5 transition",
-              invert ? "hover:bg-white/10" : "hover:bg-neutral-950/10"
+              invert ? "hover:bg-white/10" : "hover:bg-neutral-950/50"
             )}
             aria-label="Toggle navigation"
           >
@@ -50,7 +69,7 @@ const Header = ({
                 "h-6 w-6",
                 invert
                   ? "fill-white group-hover:fill-neutral-200"
-                  : "fill-neutral-950 group-hover:fill-neutral-700"
+                  : "fill-white group-hover:fill-white"
               )}
             />
           </button>
@@ -83,7 +102,7 @@ const NavigationItem = ({ href, children }) => {
 
 const Navigation = () => {
   return (
-    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
+    <nav className="mt-px font-display text-4xl font-medium tracking-tight text-white">
       <NavigationRow>
         <NavigationItem href="/work">Our Work</NavigationItem>
         <NavigationItem href="/about">About Us</NavigationItem>
