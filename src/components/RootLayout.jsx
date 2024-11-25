@@ -333,7 +333,7 @@ const Header = ({
                       searchQuery && (
                         <div className="py-8 text-center">
                           <p className="text-gray-500">
-                            No results found for "{searchQuery}"
+                            No results found for &quot;{searchQuery}&quot;
                           </p>
                           <p className="text-sm text-gray-400 mt-1">
                             Try searching with different keywords
