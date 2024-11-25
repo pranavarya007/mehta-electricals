@@ -41,7 +41,7 @@ export default function Home() {
 
         <Container className="relative z-20 mt-24 sm:mt-32">
           <FadeIn className="max-w-3xl">
-            <h1 className="font-calluna font-display text-5xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-7xl">
+            <h1 className="font-calluna text-5xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-7xl">
               Expert Electrical Services Tailored to Your Needs !
             </h1>
             <p className="mt-6 text-lg text-neutral-300">
