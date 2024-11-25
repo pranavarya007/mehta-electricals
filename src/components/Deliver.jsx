@@ -1,6 +1,5 @@
 import React from "react";
 import Section from "./Section";
-//import image15 from "../images/mehtaElectrical/15.jpg";
 import List, { ListItem } from "./List";
 
 const Deliver = () => {

@@ -1,34 +1,20 @@
 import Link from "next/link";
 import clsx from "clsx";
 import {
-  BsFacebook,
-  BsTwitter,
-  BsGithub,
-  BsYoutube,
+  BsInstagram,
   BsLinkedin,
 } from "react-icons/bs";
 
 export const SocialMediaProfiles = [
   {
-    title: "Youtube",
-    href: "#",
-    icon: BsYoutube,
-  },
-  
-  {
-    title: "Facebook",
-    href: "#",
-    icon: BsFacebook,
-  },
-  {
-    title: "linkedin",
-    href: "#",
+    title: "Linkedin",
+    href: "https://www.linkedin.com/company/mehta-electricals-and-communication/",
     icon: BsLinkedin,
   },
   {
-    title: "Twitter",
-    href: "#",
-    icon: BsTwitter,
+    title: "Instagram",
+    href: "https://www.instagram.com/mehta_electrical_communication?igsh=MXF1aWR1NmYzZXVpbg%3D%3D&utm_source=qr",
+    icon: BsInstagram,
   },
 ];
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Section from "./Section";
-//import image28 from "../images/mehtaElectrical/28.jpg";
 import Blockquote from "./Blockquote";
 
 const Build = () => {

@@ -60,23 +60,6 @@ const Services = () => {
               electrical performance, providing reliable power management for
               various applications.
             </ListItem>
-            {/*
-              
-               <ListItem title="Oil Filteration">
-              Specialized transformer oil filtration and dehydration services to
-              enhance the lifespan and efficiency of your transformers. Our
-              advanced techniques remove impurities and moisture from
-              transformer oil, ensuring optimal performance, reducing
-              operational risks, and prolonging equipment life.
-            </ListItem>
-            <ListItem title="Electronic Meters">
-              Professional installation and servicing of electronic meters to
-              accurately monitor energy consumption. Our skilled technicians
-              ensure reliable and efficient meter setups, enabling you to track
-              usage and manage energy costs effectively.
-            </ListItem>
-            
-              */}
 
             <ListItem title="Supply, Installation, Testing, and Commissioning">
               Comprehensive services covering the supply, installation, testing,

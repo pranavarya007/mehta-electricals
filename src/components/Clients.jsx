@@ -1,15 +1,4 @@
 import Image from "next/image";
-
-//import logoAdani from "../images/logos/adani-group-vector-logo.svg";
-//import logoAmeya from "../images/logos/ameya-group.svg";
-//import logoCoke from "../images/logos/Coca-Cola.svg";
-//import logoDevyani from "../images/logos/devyani_logo.svg";
-//import logoGentari from "../images/logos/gentari-icon-stacked.svg";
-//import logoIntRealEst from "../images/logos/Intelligent-Real-Estat.svg";
-//import logoLenskart from "../images/logos/lenskart-logo.svg";
-//import logoLicious from "../images/logos/licious-logo.svg";
-//import logoValueFirst from "../images/logos/value-first.svg";
-//import logoVatika from "../images/logos/vatika.svg";
 import Container from "./Container";
 import FadeIn, { FadeInStagger } from "./FadeIn";
 
