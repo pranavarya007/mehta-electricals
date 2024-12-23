@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "@";
+import Section from "@/components/Section";
 import List, { ListItem } from "./List";
 
 const Deliver = () => {
@@ -19,7 +19,7 @@ const Deliver = () => {
           ensure that you receive the ongoing support and maintenance necessary
           for long-term success. Our{" "}
           <strong className="font-semibold text-neutral-950">commitment</strong>{" "}
-          to your satisfaction doesn’t end with installation; we offer
+          to your satisfaction doesn&apos;t end with installation; we offer
           comprehensive maintenance plans designed to keep your solar system
           performing at peak efficiency. Regular maintenance checks help
           identify potential issues before they escalate, ensuring that your
