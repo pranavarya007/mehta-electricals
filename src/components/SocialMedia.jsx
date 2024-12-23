@@ -1,9 +1,6 @@
 import Link from "next/link";
 import clsx from "clsx";
-import {
-  BsInstagram,
-  BsLinkedin,
-} from "react-icons/bs";
+import { BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export const SocialMediaProfiles = [
   {
@@ -13,7 +10,7 @@ export const SocialMediaProfiles = [
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/mehta_electrical_communication?igsh=MXF1aWR1NmYzZXVpbg%3D%3D&utm_source=qr",
+    href: "https://www.instagram.com/themehtaelectrical/?hl=en",
     icon: BsInstagram,
   },
 ];

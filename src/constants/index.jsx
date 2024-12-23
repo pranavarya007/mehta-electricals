@@ -4,12 +4,15 @@ export const navigation = [
   {
     title: "Work",
     links: [
-      { title: "Transformers", href: "#" },
-      { title: "HT & LT Panels", href: "#" },
-      { title: "Solar", href: "/work/blog101" },
-      { title: "Electronic Meters", href: "#" },
-      { title: "Cabel Joining Kits", href: "#" },
-      { title: "Supply Installation Testing & Commissioning (SITC)", href: "/work/blog101" },
+      { title: "Transformers", href: "/blog/transformers" },
+      { title: "HT & LT Panels", href: "/blog/ht-lt-panels" },
+      { title: "Solar", href: "/blog/solar" },
+      { title: "Electronic Meters", href: "/blog/electronic-meters" },
+      { title: "Cabel Joining Kits", href: "/blog/cable-joining-kits" },
+      {
+        title: "Supply Installation Testing & Commissioning (SITC)",
+        href: "/blog/sitc",
+      },
       {
         title: (
           <>

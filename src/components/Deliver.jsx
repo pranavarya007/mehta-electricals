@@ -7,7 +7,7 @@ const Deliver = () => {
     <Section
       title="Deliver"
       image={{
-        src: "/images/mehtaElectrical/15.jpg",
+        src: "/images/mehtaElectrical/33.jpg",
         shape: 1,
         width: 600, // specify width
         height: 400, // specify height

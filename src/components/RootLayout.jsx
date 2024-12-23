@@ -81,6 +81,13 @@ const Header = ({
   onToggle,
   toggleRef,
 }) => {
+
+
+// handling white logo error 
+ const pathname = usePathname();
+ const isHomePage = pathname === "/";
+
+
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -198,14 +205,54 @@ const Header = ({
       <Container>
         <div className="flex items-center justify-between">
           <Link href={"/"} aria-label="Home">
-            <Logo className="text-white hover:scale-105 hover:text-white">
+            <Logo
+              className={clsx(
+                "hover:scale-105",
+                isHomePage || invert
+                  ? "text-white hover:text-white"
+                  : "text-neutral-950 hover:text-neutral-950"
+              )}
+            >
               Mehta Electrical & Communication
             </Logo>
           </Link>
           <div className="flex items-center gap-x-8">
-            <Button className="bg-white text-black" href={"/contact"}>
-              <p className="text-black">Contact us</p>
-            </Button>
+            <Link
+              href={"/process"}
+              aria-label="Services"
+              className={clsx(
+                "hover:scale-105",
+                isHomePage || invert
+                  ? "text-white hover:text-white"
+                  : "text-neutral-950 hover:text-neutral-950"
+              )}
+            >
+              Services
+            </Link>
+            <Link
+              href={"/work"}
+              aria-label="Services"
+              className={clsx(
+                "hover:scale-105",
+                isHomePage || invert
+                  ? "text-white hover:text-white"
+                  : "text-neutral-950 hover:text-neutral-950"
+              )}
+            >
+              Work & Clients
+            </Link>
+
+            <Link
+              className={clsx(
+                "hover:scale-105", "bg-transparent",
+                isHomePage || invert
+                  ? "text-white hover:text-white"
+                  : "text-neutral-950 hover:text-neutral-950"
+              )}
+              href={"/contact"}
+            >
+              <p>Contact us</p>
+            </Link>
 
             <button
               onClick={() => setSearchOpen(true)}

@@ -40,7 +40,7 @@ const OptimizedImageCarousel = ({ images }) => {
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIiIR0hISEhISEiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
             className="object-cover"
-            onLoadingComplete={() => setIsLoading(false)}
+            onLoad={() => setIsLoading(false)}
           />
         </div>
       ))}
@@ -57,7 +57,7 @@ const OptimizedImageCarousel = ({ images }) => {
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 rounded-full transition-colors ${
+            className={`w-3 h-3 rounded-full transition-colors ${
               index === currentImageIndex ? "bg-white" : "bg-white/50"
             }`}
             onClick={() => setCurrentImageIndex(index)}
@@ -81,22 +81,12 @@ const heroImages = [
     height: 1080,
   },
   {
-    src: "/images/mehtaElectrical/16.jpg",
+    src: "/images/mehtaElectrical/30.jpg",
     width: 1920,
     height: 1080,
   },
   {
     src: "/images/mehtaElectrical/29.jpg",
-    width: 1920,
-    height: 1080,
-  },
-  {
-    src: "/images/mehtaElectrical/34.jpg",
-    width: 1920,
-    height: 1080,
-  },
-  {
-    src: "/images/mehtaElectrical/15.jpg",
     width: 1920,
     height: 1080,
   },
@@ -110,12 +100,10 @@ const heroImages = [
 export default function Home() {
   return (
     <main className="text-black">
-      <section className="relative -mt-32 pt-32 py-24 sm:py-32">
+      <section className="relative -mt-32 pt-32 py-24 sm:py-32 mb-16 w-full h-[100vh]">
         <div className="absolute inset-0 top-0">
-          <div className="relative w-full h-full">
-            <OptimizedImageCarousel images={heroImages.map((img) => img.src)} />
-            <div className="absolute inset-0 bg-black/40 w-full h-[100vh]"></div>
-          </div>
+          <OptimizedImageCarousel images={heroImages.map((img) => img.src)} />
+          <div className="absolute inset-0 bg-black/70 w-full h-[100vh]"></div>
         </div>
 
         <Container className="relative z-20 mt-24 sm:mt-32">
@@ -137,7 +125,7 @@ export default function Home() {
           </FadeIn>
         </Container>
       </section>
-
+      <Services />
       <Clients />
       <Testimonials
         className="mt-24 sm:mt-32 lg:mt-40"
@@ -153,7 +141,7 @@ export default function Home() {
         contractors. From initial consultation to the final installation, their
         expertise in handling high-demand projects shone through every step.
       </Testimonials>
-      <Services />
+
       <ContactSection />
     </main>
   );
