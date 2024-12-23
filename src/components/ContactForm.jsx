@@ -163,7 +163,6 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             error={errors.email}
-            
           />
           <TextInput
             label="Company"
@@ -172,7 +171,6 @@ const ContactForm = () => {
             value={formData.company}
             onChange={handleChange}
             error={errors.company}
-    
           />
           <TextInput
             label="Phone"
@@ -194,7 +192,7 @@ const ContactForm = () => {
           />
         </div>
         <Button type="submit" className="mt-10">
-          Let's work together
+          Let&apos;s work together
         </Button>
       </form>
     </FadeIn>

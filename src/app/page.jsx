@@ -7,6 +7,7 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import SolarNotification from "@/components/AnimatedSolarNotification";
 
 // Optimized Image Carousel Component
 const OptimizedImageCarousel = ({ images }) => {
@@ -100,6 +101,7 @@ const heroImages = [
 export default function Home() {
   return (
     <main className="text-black">
+      <SolarNotification />
       <section className="relative -mt-32 pt-32 py-24 sm:py-32 mb-16 w-full h-[100vh]">
         <div className="absolute inset-0 top-0">
           <OptimizedImageCarousel images={heroImages.map((img) => img.src)} />
