@@ -13,9 +13,9 @@ const Solar = () => {
         <br />
         <br />
         <p>
-          Whether you're looking for rooftop solar panels or large-scale solar
-          farms, our team is equipped to handle projects of all sizes. We ensure
-          seamless integration with existing systems, maximizing energy
+          Whether you&apos;re looking for rooftop solar panels or large-scale
+          solar farms, our team is equipped to handle projects of all sizes. We
+          ensure seamless integration with existing systems, maximizing energy
           efficiency and cost savings.
         </p>
       </PageIntro>
