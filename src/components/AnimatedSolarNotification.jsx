@@ -5,22 +5,6 @@ import { Sun, X } from "lucide-react";
 const SolarNotification = () => {
   const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    // Get notification state from localStorage
-    const notificationState = localStorage.getItem(
-      "solarNotificationDismissed"
-    );
-    if (notificationState) {
-      setIsVisible(false);
-    }
-  }, []);
-
-  const handleDismiss = () => {
-    setIsVisible(false);
-    // Save notification state to localStorage
-    localStorage.setItem("solarNotificationDismissed", "true");
-  };
-
   return (
     <AnimatePresence>
       {isVisible && (
@@ -38,14 +22,6 @@ const SolarNotification = () => {
                 Portal for processing rooftop solar PV application for
                 subsidy-based applications.
               </p>
-              <button
-                type="button"
-                className="flex items-center justify-center rounded-md p-1 text-white hover:bg-white/20 transition-colors"
-                onClick={handleDismiss}
-              >
-                <span className="sr-only">Dismiss</span>
-                <X className="h-5 w-5" />
-              </button>
             </div>
           </div>
         </motion.div>

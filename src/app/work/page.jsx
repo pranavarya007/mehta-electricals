@@ -2,6 +2,8 @@ import Container from "@/components/Container";
 import PageIntro from "@/components/PageIntro";
 import ContactSection from "@/components/ContactSection";
 import React from "react";
+import Clients from "@/components/Clients";
+import WorkHighlights from "@/components/WorkHighlights";
 
 const projects = [
   {
@@ -75,10 +77,12 @@ const projects = [
 const WorkPage = () => {
   return (
     <>
+      <Clients className="max-w-5xl" />
       <PageIntro
         eyebrow="Our work"
         title="Proven solutions for real-world problems."
       ></PageIntro>
+
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-bold text-neutral-900 mb-10">
@@ -102,6 +106,7 @@ const WorkPage = () => {
           </div>
         </div>
       </Container>
+      <WorkHighlights />
       <ContactSection />
     </>
   );

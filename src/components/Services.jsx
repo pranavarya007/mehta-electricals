@@ -3,16 +3,17 @@ import SectionIntro from "./SectionIntro";
 import Container from "./Container";
 import FadeIn from "./FadeIn";
 import StylizedImage from "./StylizedImage";
-//import image35 from "../images/mehtaElectrical/35.jpg";
+
 import List, { ListItem } from "./List";
 
 const Services = () => {
   return (
-    <>
+    <section id="services-section">
       <SectionIntro
         eyebrow="Services"
         title="Powering Your Projects: Explore Our Range of Services !"
         className="mt-24 sm:mt-32 lg:mt-40"
+        
       >
         <p>
           As an &quot;A&quot; class Electrical Contractor, we specialize in a
@@ -71,7 +72,7 @@ const Services = () => {
           </List>
         </div>
       </Container>
-    </>
+    </section>
   );
 };
 

@@ -101,7 +101,7 @@ const heroImages = [
 export default function Home() {
   return (
     <main className="text-black">
-      <SolarNotification />
+      {/* <SolarNotification /> */}
       <section className="relative -mt-32 pt-32 py-24 sm:py-32 mb-16 w-full h-[100vh]">
         <div className="absolute inset-0 top-0">
           <OptimizedImageCarousel images={heroImages.map((img) => img.src)} />
