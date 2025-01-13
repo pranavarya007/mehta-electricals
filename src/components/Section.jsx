@@ -37,7 +37,7 @@ const Section = ({
                   {...image}
                   sizes="(min-width: 1024px) 41rem, 31rem"
                   className={`
-                    justify-center px-[23vw] md:px-0
+                    justify-center px-24 md:px-0
                     ${
                       forceLeftAlign
                         ? "lg:justify-start"
