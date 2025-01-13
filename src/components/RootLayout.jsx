@@ -47,7 +47,7 @@ const Header = ({
           <Link href={"/"} aria-label="Home">
             <Logo
               className={clsx(
-                "hover:scale-105 ",
+                "hover:scale-105",
                 isHomePage || invert
                   ? "text-white hover:text-white"
                   : "text-neutral-950 hover:text-neutral-950"
@@ -56,7 +56,7 @@ const Header = ({
               Mehta Electrical & Communication
             </Logo>
           </Link>
-          <div className="flex items-center gap-x-8">
+          <div className="flex items-center justify-end md:gap-x-8 gap-x-3">
             <button
               onClick={scrollToServices}
               className={clsx(
