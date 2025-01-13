@@ -27,7 +27,7 @@ const Services = () => {
               <StylizedImage
                 src={"/images/mehtaElectrical/35.jpg"}
                 sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
+                className="justify-center lg:justify-end px-[90px] md:px-0"
                 width={200} // Image width
                 height={100} // Image height
               />

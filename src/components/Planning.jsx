@@ -12,6 +12,7 @@ const Discover = () => {
         shape: 1,
         width: 600, // specify width
         height: 400, // specify height
+        
       }}
     >
       <div className="space-y-6 text-base text-neutral-600">

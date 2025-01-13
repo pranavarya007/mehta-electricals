@@ -20,7 +20,7 @@ const ArrowIcon = (props) => {
 
 const NewsletterForm = () => {
   return (
-    <form className="max-w-sm">
+    <form className="max-w-sm w-full px-4 sm:px-0">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>
@@ -53,29 +53,38 @@ const NewsletterForm = () => {
 const Footer = () => {
   return (
     <>
-      <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
+      <Container
+        as="footer"
+        className="mt-16 sm:mt-24 lg:mt-32 w-full px-4 sm:px-0"
+      >
         <FadeIn>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-16 lg:grid-cols-2">
             <FooterNavigation />
-            <div className="flex lg:justify-end">
+            <div className="flex justify-center lg:justify-end">
               <NewsletterForm />
             </div>
           </div>
-          <div className="mb-10 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-            <Link href={"/"} aria-label="Home">
-              <Logo className="h-8" fillOnHover>
-                Mehta Electrical & Communication
-              </Logo>
-            </Link>
-            <p className="text-sm text-neutral-700">
-              © Mehta Electrical & Communication. {new Date().getFullYear()}
-            </p>
+          <div className="mb-10 md:mb-6 sm:mb-10 h-[100px] lg:h-0 mt-16 sm:mt-24 border-t border-neutral-950/10 pt-8 sm:pt-12">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-y-6 sm:gap-y-0">
+              <Link
+                href={"/"}
+                aria-label="Home"
+                className="flex justify-center md:justify-start"
+              >
+                <Logo className="h-6 sm:h-6 max-w-full" fillOnHover>
+                  Mehta Electrical & Communication
+                </Logo>
+              </Link>
+              <p className="text-xs pt-10 md:pt-0 sm:text-sm text-neutral-700 text-center sm:text-right">
+                © Mehta Electrical & Communication. {new Date().getFullYear()}
+              </p>
+            </div>
           </div>
         </FadeIn>
       </Container>
-      <div className="flex items-center justify-center mb-20 pt-0 ">
+      <div className="flex items-center justify-center mb-12 sm:mb-20 pt-4 md:pt-0 px-4">
         <Link href="https://github.com/pranavarya007" aria-label="Developer">
-          <Logo className="text-sm" fillOnHover>
+          <Logo className="text-xs sm:text-sm" fillOnHover>
             Developed by Goat Project{" "}
           </Logo>
         </Link>

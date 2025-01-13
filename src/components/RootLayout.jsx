@@ -22,8 +22,6 @@ const Header = ({
   onToggle,
   toggleRef,
 }) => {
-
-
   // handling white logo error
   const pathname = usePathname();
   const isHomePage = pathname === "/";
@@ -45,11 +43,11 @@ const Header = ({
   return (
     <>
       <Container>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between pt-10 md:pt-0">
           <Link href={"/"} aria-label="Home">
             <Logo
               className={clsx(
-                "hover:scale-105",
+                "hover:scale-105 ",
                 isHomePage || invert
                   ? "text-white hover:text-white"
                   : "text-neutral-950 hover:text-neutral-950"
@@ -62,7 +60,7 @@ const Header = ({
             <button
               onClick={scrollToServices}
               className={clsx(
-                "hover:scale-105",
+                "hover:scale-105 hidden lg:flex",
                 isHomePage || invert
                   ? "text-white hover:text-white"
                   : "text-neutral-950 hover:text-neutral-950"
@@ -74,7 +72,7 @@ const Header = ({
               href={"/work"}
               aria-label="Services"
               className={clsx(
-                "hover:scale-105",
+                "hover:scale-105 hidden lg:flex",
                 isHomePage || invert
                   ? "text-white hover:text-white"
                   : "text-neutral-950 hover:text-neutral-950"
@@ -85,7 +83,7 @@ const Header = ({
 
             <Link
               className={clsx(
-                "hover:scale-105",
+                "hover:scale-105 hidden lg:flex",
                 "bg-transparent",
                 isHomePage || invert
                   ? "text-white hover:text-white"
@@ -112,9 +110,12 @@ const Header = ({
               <Icon
                 className={clsx(
                   "h-6 w-6",
-                  invert
-                    ? "fill-white group-hover:fill-neutral-200"
-                    : "fill-white group-hover:fill-white"
+                  // First check if it's homepage
+                  isHomePage
+                    ? "fill-white group-hover:fill-neutral-200" // White on homepage
+                    : invert
+                    ? "fill-white hover:fill-white" // Always white when inverted (hero section)
+                    : "fill-neutral-950 group-hover:fill-neutral-950"
                 )}
               />
             </button>

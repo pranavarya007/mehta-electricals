@@ -25,6 +25,9 @@ const Offices = ({ invert = false, ...props }) => {
           Sector-14
           <br />
           Opp. Plaza Solitaire Hotel Old Delhi Road, Gurgaon-122001 
+          <br />
+          <br />
+          mehtaelectrical.mehta@gmail.com
         </Office>
       </li>
       <li>

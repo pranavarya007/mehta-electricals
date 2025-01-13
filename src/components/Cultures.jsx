@@ -5,16 +5,16 @@ import { GridList, GridListItem } from "./GridList";
 
 const Cultures = () => {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32 mx-5 md:mx-0">
       <SectionIntro
         eyebrow="Our culture"
         title="Empowering Our Team to Deliver Exceptional Service for You"
         invert
       >
         <p>
-          We’re not just a team; we’re a family that shares a commitment to
+          We&apos;re not just a team; we&apos;re a family that shares a commitment to
           deliver quality and bring value to our clients and our community.
-          Here’s what guides us every day:
+          Here&apos;s what guides us every day:
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -38,7 +38,7 @@ const Cultures = () => {
             latest trends, technologies, and practices. From technical training
             to personal development, we support our employees in expanding their
             knowledge, encouraging them to bring new and better ways to meet our
-            clients’ needs.
+            clients&apos; needs.
           </GridListItem>
         </GridList>
       </Container>

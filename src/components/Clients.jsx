@@ -15,9 +15,9 @@ const clients = [
 
 const Clients = () => {
   return (
-    <div className="relative rounded-4xl bg-neutral-950 py-20 mt-10 sm:py-32 ">
+    <div className="relative rounded-4xl bg-neutral-950 py-20 mt-10 sm:py-32 mx-5 md:mx-0">
       <Container>
-        <FadeIn className="flex items-center gap-x-8">
+        <FadeIn className="flex items-center gap-x-8 ">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
             We have worked with hundreds of amazing clients
           </h2>

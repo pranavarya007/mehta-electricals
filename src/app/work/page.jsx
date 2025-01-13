@@ -76,8 +76,8 @@ const projects = [
 
 const WorkPage = () => {
   return (
-    <>
-      <Clients className="max-w-5xl" />
+    <div className="mt-[100px] md:mt-0">
+      <Clients className="max-w-5xl " />
       <PageIntro
         eyebrow="Our work"
         title="Proven solutions for real-world problems."
@@ -108,7 +108,7 @@ const WorkPage = () => {
       </Container>
       <WorkHighlights />
       <ContactSection />
-    </>
+    </div>
   );
 };
 
