@@ -13,7 +13,7 @@ const ContactDetails = () => {
       </h2>
       <p className="mt-6 text-base text-neutral-600">
         Prefer doing things in person? While we have our office located at
-        Gurgaon, we understand the importance of convenience. That’s why we
+        Gurgaon, we understand the importance of convenience. That&apos;s why we
         also offer online services to cater to your electrical needs from the
         comfort of your home.
       </p>

@@ -1,4 +1,3 @@
-
 "use client";
 
 // components/ContactForm.jsx
@@ -13,7 +12,7 @@ const Toast = ({ message, type, onClose }) => {
       className={`fixed z-50 transform transition-transform duration-300 ease-in-out
       left-1/2 -translate-x-1/2 
       sm:left-auto sm:right-4 sm:translate-x-0
-      ${type === "success" ? "top-4" : "top-4"}`}
+      ${type === "success" ? "bottom-4" : "bottom-4"}`}
     >
       <div
         className={`rounded-lg px-6 py-4 shadow-lg w-[calc(100vw-2rem)] sm:w-auto mx-2 sm:mx-0 
@@ -45,6 +44,19 @@ const ContactForm = () => {
   const [errors, setErrors] = useState({});
   const [toast, setToast] = useState({ show: false, message: "", type: "" });
 
+  // Replace this with your Google Form URL
+  const SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbw379QZ6BVu4BqjSnL6zW22jnd93qSd4Sd-PaTlNYUwEHU8eOd6eghZRAJwgthYJbMa/exec";
+
+  // Map your form fields to Google Form field IDs
+  const GOOGLE_FORM_FIELD_IDS = {
+    name: "entry.1059879723",
+    email: "entry.521178433",
+    company: "entry.827960070",
+    phone: "entry.561567487",
+    message: "entry.748942149",
+  };
+
   const validateForm = () => {
     const newErrors = {};
 
@@ -55,8 +67,6 @@ const ContactForm = () => {
     if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Please enter a valid email";
     }
-
-   
 
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone is required";
@@ -100,8 +110,19 @@ const ContactForm = () => {
     }
 
     try {
-      // Add your form submission logic here
-      // await submitForm(formData);
+      // Submit to Google Apps Script
+      const response = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (!result.success) {
+        throw new Error(result.message || "Submission failed");
+      }
 
       setToast({
         show: true,
